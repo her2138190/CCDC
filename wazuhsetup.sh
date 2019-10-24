@@ -31,7 +31,7 @@ EOF
 
 
 dnf install filebeat-7.3.2
-curl -so /etc/filebeat/filebeat.yml https://raw.githubusercontent.com/wazuh/v3.10.2/extensions/filebeat/7.x/filebeat.yml
+curl -so /etc/filebeat/filebeat.yml https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/filebeat/7.x/filebeat.yml
 chmod go+r /etc/filebeat/filebeat.yml
 curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/elasticsearch/7.x/wazuh-template.json
 chmod go+r /etc/filebeat/wazuh-template.json
