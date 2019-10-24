@@ -33,4 +33,21 @@ curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/waz
 chmod go+r /etc/filebeat/wazuh-template.json
 curl -s https://packages.wazuh.com/3.x/filebeat/wazuh-filebeat-0.1.tar.gz | sudo tar -xvz -C /usr/share/filebeat/module
 #now edit /etc/filebeat.yml and add your internal ip to the config file....
+
+#Enable and start the Filebeat service:
+
+        #For Systemd:
+
+#systemctl daemon-reload
+
+#systemctl enable filebeat.service
+
+#systemctl start filebeat.service
+
+#For SysV Init:
+
+#chkconfig --add filebeat
+
+#service filebeat start
+
 # after the internal ipv4 is added, confirm filebeats status by doing 'service filebeat start'
