@@ -10,3 +10,5 @@ autorefresh=1
 type=rpm-md
 EOF
 
+yum install elasticsearch-7.3.2
+
